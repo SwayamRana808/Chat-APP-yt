@@ -23,6 +23,6 @@ const userSchema=new mongoose.Schema({
         type:String,
         default:""
     }
-})
+},{timestamps:true})
 const User=mongoose.model("User",userSchema) //"User" ->U capatalise and mongoose will change it to "users" 
 export default User;
