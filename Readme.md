@@ -25,9 +25,15 @@ app.use(express.static(path.join(__dirname, "/frontend/dist")));
 app.get("*", (req, res) => {
 	res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
 });
+Backend Messaging Model:
+<img width="1164" height="750" alt="Screenshot 2025-08-09 124949" src="https://github.com/user-attachments/assets/d5ba4f4c-d66a-4ecc-8b92-704763b30357" />
+
+
+
 
 
   "start": "nodemon backend/server.js",
   "build":"npm install && npm install --prefix frontend && npm run build --prefix frontend"
+
 
   <npm run build> in root that contains both frontend and backend 
